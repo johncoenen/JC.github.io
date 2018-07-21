@@ -1,0 +1,113 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+* {
+  font-size: 16px;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul, li {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+  margin: 0;
+}
+.container {
+  height: 100%;
+  width: 100%;
+  background-color: #aeb0b5;
+}
+
+h1 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 3.0em;
+  font-weight: bold;
+  color: #e4e2e0;
+  padding-top: 48px;
+  padding-left: 37px;
+  letter-spacing: 1.4px;
+}
+nav {
+  overflow: hidden;
+}
+
+li {
+  float: left;
+  text-align: center;
+  padding: 20px 30px 20px 36px;
+}
+nav, li {
+  font-family: 'Archivo Narrow', sans-serif;
+  font-size: 1.5em;  
+  font-weight: 400;
+  color: #212121;
+  letter-spacing: 1.6px;
+}
+
+article {
+  padding: 33px 25% 20px 50px;
+}
+
+blockquote {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.7em;
+  font-weight: 700;
+  color: #e4e2e0;
+}
+
+img {
+  padding: 20px;
+}
+@media screen and (min-width: 600px) {
+  nav > li {
+    width: 120px;
+    border-bottom: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+
+    display: inline-block;
+    margin-right: -4px
+    /*maybe use flex for this*/
+  }
+}
