@@ -98,6 +98,24 @@ blockquote {
 img {
   padding: 20px;
 }
+
+/* TODO: center text area, responsiveness, this is the landing page right?, get rid of most of the photos, either 1 large or three medium that stack responsively */
+footer {
+  background: rgba(33, 33, 33, .5);
+  color: #f1f1f1;
+  font-family: "Archivo Narrow", sans-serif;
+  margin: 20px 20px 20px 20px;
+}
+
+/* redo this bit */
+footer > p {
+  display: block;
+  border: 1px solid #f1f1f1;
+  padding: 10px 10px 10px 10px;
+}
+
+/* Media Queries */
+
 @media screen and (min-width: 600px) {
   nav > li {
     width: 120px;
@@ -111,3 +129,4 @@ img {
     /*maybe use flex for this*/
   }
 }
+
