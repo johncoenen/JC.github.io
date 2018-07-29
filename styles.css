@@ -23,8 +23,13 @@ time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;
+  vertical-align: baseline;  
 }
+/* redundant, but easy to find for the time being */
+html {
+  background: #aeb0b5;
+}
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
@@ -51,11 +56,7 @@ table {
 
 body {
   margin: 0;
-}
-.container {
-  height: 100%;
-  width: 100%;
-  background-color: #aeb0b5;
+  background: #aeb0b5;
 }
 
 h1 {
@@ -67,6 +68,52 @@ h1 {
   padding-left: 37px;
   letter-spacing: 1.4px;
 }
+
+.navbar {
+  font-family: 'Archivo Narrow', sans-serif;
+  font-size: 1.5em;  
+  font-weight: 400;
+  color: #212121;
+  letter-spacing: 1.6px;
+  padding-bottom: 12px;
+}
+
+#nav-main {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+#nav-main li {
+  font-family: 'Archivo Narrow', sans-serif;
+  font-size: 1.5em;  
+  font-weight: 400;
+  color: #212121;
+  letter-spacing: 1.6px;
+
+  text-align: center;
+  margin: 15px auto;
+}
+
+#logo {
+  display: inline-block;
+  font-size: 22px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+#navbar-toggle {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+  color: orangered;
+  font-size: 22px;
+}
+
+/*
+
 nav {
   overflow: hidden;
 }
@@ -83,6 +130,8 @@ nav, li {
   color: #212121;
   letter-spacing: 1.6px;
 }
+
+*/
 
 article {
   padding: 33px 25% 20px 50px;
