@@ -69,51 +69,6 @@ h1 {
   letter-spacing: 1.4px;
 }
 
-.navbar {
-  font-family: 'Archivo Narrow', sans-serif;
-  font-size: 1.5em;  
-  font-weight: 400;
-  color: #212121;
-  letter-spacing: 1.6px;
-  padding-bottom: 12px;
-}
-
-#nav-main {
-  list-style-type: none;
-  display: flex;
-  flex-direction: column;
-  
-}
-
-#nav-main li {
-  font-family: 'Archivo Narrow', sans-serif;
-  font-size: 1.5em;  
-  font-weight: 400;
-  color: #212121;
-  letter-spacing: 1.6px;
-
-  text-align: center;
-  margin: 15px auto;
-}
-
-#logo {
-  display: inline-block;
-  font-size: 22px;
-  margin-top: 10px;
-  margin-left: 20px;
-}
-
-#navbar-toggle {
-  position: absolute;
-  top: 10px;
-  right: 20px;
-  cursor: pointer;
-  color: orangered;
-  font-size: 22px;
-}
-
-/*
-
 nav {
   overflow: hidden;
 }
@@ -130,8 +85,6 @@ nav, li {
   color: #212121;
   letter-spacing: 1.6px;
 }
-
-*/
 
 article {
   padding: 33px 25% 20px 50px;
