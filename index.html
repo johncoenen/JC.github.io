@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,76 +8,56 @@
   <title>John Coenen | Web Devloper</title>
   <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow|Oswald" rel="stylesheet">
   <!-- For posterity's sake, maybe, don't use all the font awesomes. -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-  <!-- this seems not semantic, like, at all -->
+  <div class="container">
     <h1>John Coenen</h1>
-    <header>      
-      <nav class="navbar">
-        <span id="navbar-toggle">
-          <!-- 'i' is for icon? i.e. burger time -->
-          <i class="fas fa-bars"></i>
-        </span>
-        <!-- why is this here \/ ? TODO: center this too? -->  
-        <a href="#" id="nav-main">BLAM!LOGO</a>
-          <ul id="nav-main">
-              <li>
-                  <a href="#" class="nav-link">WORK</a>
-              </li>
-              <li>
-                  <a href="#" class="nav-link">WORK</a>
-              </li>
-              <li>
-                  <a href="#" class="nav-link">WORK</a>
-              </li>       
-              <li>
-                  <a href="#" class="nav-link">WORK</a>
-              </li>
-              <li>
-                  <a href="#" class="nav-link">WORK</a>
-              </li>          
-          </ul>
-      </nav>
-    </header>
-    <article>
-      <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, sed? Autem aliquid, debitis consectetur soluta voluptate explicabo atque omnis. Commodi adipisci ducimus porro sint laborum, nulla quasi ea. Odio, laboriosam? Lorem ipsum dolor sit, amet consectetur adipisicing elit.</blockquote>
-    </article>
-    <section>
-      <!-- CLEAN THIS DIV MESS UP w/ HTML5 -->
-      <div class="grid">
-        <a href="https://imgplaceholder.com"><img src="https://imgplaceholder.com/250x250" alt="ImgPlaceholder"></a>
-        <a href="https://imgplaceholder.com"><img src="https://imgplaceholder.com/250x250" alt="ImgPlaceholder"></a>
-        <a href="https://imgplaceholder.com"><img src="https://imgplaceholder.com/250x250" alt="ImgPlaceholder"></a>
-        <a href="https://imgplaceholder.com"><img src="https://imgplaceholder.com/250x250" alt="ImgPlaceholder"></a>
-        <a href="https://imgplaceholder.com"><img src="https://imgplaceholder.com/250x250" alt="ImgPlaceholder"></a>
-        <a href="https://imgplaceholder.com"><img src="https://imgplaceholder.com/250x250" alt="ImgPlaceholder"></a>
-      </div>
-    </section>
-    <footer>
-      <p>I am an aspiring **Insert Prospective Job Title Here**. I use HTML, CSS, and Javascript to design, prototype, and publish web pages and web componenets. UI Design & Development appeal to me because... This is why I am a good fit... This is all so derivative... how do I stand out????</p>
-    </footer>
-    
-  
-  <!-- NOT MY CODE from: https://itnext.io/how-to-build-a-responsive-navbar-using-flexbox-and-javascript-eb0af24f19bf-->
-    <!-- ALSO this is a nice portfolio site: https://sukhjinderarora.me/#about -->
-    
-  <script>
-    let mainNav=document.getElementById('nav-main');
-    let navbarToggle=document.getElementById('navbar-toggle');
+    <ul>
+      <li>
+        <a href="#">ABOUT</a>
+      </li>
+      <li>  
+        <a href="#">DEMOS</a>
+      </li>  
+      <li>  
+        <a href="#">ILLUSTRATION</a>
+      </li>
+      <li>  
+        <a href="#">DESIGN</a>
+      </li>
+    </ul>
+  </div>
+  <article>
+    <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, sed? Autem aliquid, debitis consectetur soluta voluptate
+      explicabo atque omnis. Commodi adipisci ducimus porro sint laborum, nulla quasi ea. Odio, laboriosam? Lorem ipsum dolor
+      sit, amet consectetur adipisicing elit.</blockquote>
+  </article>
+  <section>
+    <!-- CLEAN THIS DIV MESS UP w/ HTML5, use grid or flex or both -->
+    <div class="grid">
+      <a href="https://imgplaceholder.com">
+        <img src="https://imgplaceholder.com/250x250" alt="ImgPlaceholder">
+      </a>
+      <a href="https://imgplaceholder.com">
+        <img src="https://imgplaceholder.com/250x250" alt="ImgPlaceholder">
+      </a>
+      <a href="https://imgplaceholder.com">
+        <img src="https://imgplaceholder.com/250x250" alt="ImgPlaceholder">
+      </a>
+    </div>
+  </section>
+  <footer>
+    <p>I am an aspiring **Insert Prospective Job Title Here**. I use HTML, CSS, and Javascript to design, prototype, and publish
+      web pages and web components. UI Design & Development appeal to me because... This is why I am a good fit... This
+      is all so derivative... how do I stand out????</p>
+  </footer>
 
-    navbarToggle.addEventListener('click',function(){
 
-      if(this.classList.contains('active')){
-        mainNav.style.display="none";
-        this.classList.remove('active');
-      }
-      else{
-        mainNav.style.display="flex";
-        this.classList.add('active');
-      }
-    });
-  </script>
 </body>
+
 </html>
