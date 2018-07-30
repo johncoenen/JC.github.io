@@ -54,6 +54,7 @@ table {
 	border-spacing: 0;
 }
 
+/* MAIN STYLES */
 body {
   margin: 0;
   background: #aeb0b5;
@@ -69,23 +70,10 @@ h1 {
   letter-spacing: 1.4px;
 }
 
-nav {
-  overflow: hidden;
+nav ul {
+  display: flex;
+  justify-content: space-between;
 }
-
-li {
-  float: left;
-  text-align: center;
-  padding: 20px 30px 20px 36px;
-}
-nav, li {
-  font-family: 'Archivo Narrow', sans-serif;
-  font-size: 1.5em;  
-  font-weight: 400;
-  color: #212121;
-  letter-spacing: 1.6px;
-}
-
 article {
   padding: 33px 25% 20px 50px;
 }
