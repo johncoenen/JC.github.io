@@ -1,57 +1,7 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
+/* Main Styles */
 * {
-  font-size: 16px;
-}
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-  vertical-align: baseline;  
-}
-/* redundant, but easy to find for the time being */
-html {
-  background: #aeb0b5;
-}
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul, li {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  padding: 0;
+  margin: 0;
 }
 
 /* MAIN STYLES */
@@ -60,6 +10,7 @@ body {
   background: #aeb0b5;
 }
 
+<<<<<<< HEAD
 h1 {
   font-family: 'Oswald', sans-serif;
   font-size: 3.0em;
@@ -74,8 +25,58 @@ nav ul {
   display: flex;
   justify-content: space-between;
 }
+=======
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1, ul {
+  list-style: none;
+  text-transform: uppercase;
+}
+
+h1 a, ul a {
+  text-decoration: none;
+  font-family: 'Archivo Narrow', sans-serif;
+  font-size: 1.5em;  
+  font-weight: 400;
+  color: #212121;
+  letter-spacing: .45em;
+  padding-bottom: 12px;  
+}
+
+ul {
+  display: flex;
+}
+
+ul a {
+  display: block;
+  padding: 1em;
+  color: #212121;
+}
+
+ul a:hover {
+  background: #d6d7d9;
+  border-radius: 8px;
+}
+
+h1 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 3.0em;
+  font-weight: bold;
+  color: #e4e2e0;
+  margin: 1em;
+  padding-top: 24px;
+  padding-left: 2%;
+  letter-spacing: 1.4px;
+  position: relative;
+}
+
+>>>>>>> 11f5c4632bc6ac2059d5723ed5f9f6068a7d82c3
 article {
-  padding: 33px 25% 20px 50px;
+  display: flex;
 }
 
 blockquote {
@@ -83,6 +84,9 @@ blockquote {
   font-size: 1.7em;
   font-weight: 700;
   color: #e4e2e0;
+  border: 1px solid #e4e2e0;
+  padding: 10% 10% 10% 10%;
+  margin: 10% 10% 10% 10%; 
 }
 
 img {
@@ -106,17 +110,34 @@ footer > p {
 
 /* Media Queries */
 
-@media screen and (min-width: 600px) {
-  nav > li {
-    width: 120px;
-    border-bottom: none;
-    height: 50px;
-    line-height: 50px;
-    font-size: 1.4em;
+@media all and (max-width: 990px) {
+  .container {
+    flex-direction: column;
+  }
 
-    display: inline-block;
-    margin-right: -4px
-    /*maybe use flex for this*/
+  h1 {
+    margin: 0;
+  }
+
+  ul {
+    width: 100%;
+    justify-content: space-around;
   }
 }
 
+@media all and (max-width: 600px) {
+  h1 {
+    margin: .25em 0;
+    align-self: left;
+    /* this aligns the h1 element to the left of the flex container */
+  }
+
+  ul {
+    flex-direction: column;
+  }
+
+  ul a {
+    text-align: center;
+    padding: 10px;    
+  }
+}
