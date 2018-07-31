@@ -10,22 +10,6 @@ body {
   background: #aeb0b5;
 }
 
-<<<<<<< HEAD
-h1 {
-  font-family: 'Oswald', sans-serif;
-  font-size: 3.0em;
-  font-weight: bold;
-  color: #e4e2e0;
-  padding-top: 48px;
-  padding-left: 37px;
-  letter-spacing: 1.4px;
-}
-
-nav ul {
-  display: flex;
-  justify-content: space-between;
-}
-=======
 .container {
   display: flex;
   justify-content: space-between;
@@ -74,7 +58,15 @@ h1 {
   position: relative;
 }
 
->>>>>>> 11f5c4632bc6ac2059d5723ed5f9f6068a7d82c3
+/*
+** REMINDER - CREATE CLASS NAMES, USE SOME SORT OF NAMING CONVENTION.
+** This is going to help in the long run. At this point you need to start thinking about reusable content for the remaining pages.
+*/
+
+/*
+  IDEA - Buttons, #20603c;
+       - btn-text, #b2cce5;  
+*/
 article {
   display: flex;
 }
@@ -89,28 +81,31 @@ blockquote {
   margin: 10% 10% 10% 10%; 
 }
 
+.container-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
 img {
-  padding: 20px;
+  margin: 2em 2em 2em 2em;
 }
 
 /* TODO: center text area, responsiveness, this is the landing page right?, get rid of most of the photos, either 1 large or three medium that stack responsively */
 footer {
   background: rgba(33, 33, 33, .5);
-  color: #f1f1f1;
-  font-family: "Archivo Narrow", sans-serif;
-  margin: 20px 20px 20px 20px;
+  height: 100px;  
+  width: 100%;
 }
 
-/* redo this bit */
-footer > p {
-  display: block;
-  border: 1px solid #f1f1f1;
-  padding: 10px 10px 10px 10px;
-}
+/*
+font-family: "Archivo Narrow", sans-serif;
+*/
+
 
 /* Media Queries */
 
-@media all and (max-width: 990px) {
+@media all and (max-width: 1300px) {
   .container {
     flex-direction: column;
   }
@@ -123,9 +118,15 @@ footer > p {
     width: 100%;
     justify-content: space-around;
   }
+
+  .container-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
 }
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 860px) {
   h1 {
     margin: .25em 0;
     align-self: left;
@@ -138,6 +139,32 @@ footer > p {
 
   ul a {
     text-align: center;
-    padding: 10px;    
+        
+  }
+
+  .container-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center; 
   }
 }
+
+@media all and (max-width: 280px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  h1 {
+    display: block;
+    text-align: center;
+  }
+
+  .container-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+} 
