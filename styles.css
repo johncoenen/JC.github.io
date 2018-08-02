@@ -93,15 +93,11 @@ img {
 
 /* TODO: center text area, responsiveness, this is the landing page right?, get rid of most of the photos, either 1 large or three medium that stack responsively */
 footer {
-  background: rgba(33, 33, 33, .5);
-  height: 100px;  
-  width: 100%;
+  display: grid;
+  grid-template-rows: 1fr 100px 100px 100px 100px 1fr;
 }
 
-/*
-font-family: "Archivo Narrow", sans-serif;
-*/
-
+/* FontAwesome icons not working use placeholders for now */
 
 /* Media Queries */
 
