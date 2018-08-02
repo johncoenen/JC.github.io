@@ -10,18 +10,30 @@ body {
   background: #aeb0b5;
 }
 
-.container {
+.nav .nav--header {  
+  font-family: 'Oswald', sans-serif;
+  font-size: 3.0em;
+  font-weight: bold;
+  color: #e4e2e0;
+  
+  margin: 1em;
+  padding-top: 24px;
+  padding-left: 2%;
+  letter-spacing: 1.4px;
+
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  
 }
 
 h1, ul {
   list-style: none;
   text-transform: uppercase;
+  text-align: center;
 }
 
-h1 a, ul a {
+a, ul a {
   text-decoration: none;
   font-family: 'Archivo Narrow', sans-serif;
   font-size: 1.5em;  
